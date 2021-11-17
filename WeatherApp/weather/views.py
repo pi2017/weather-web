@@ -23,6 +23,7 @@ def index(request):
         city_info = {
             'city': city.name,
             'temp': res["main"]["temp"],
+            'humidity': res["main"]["humidity"],
             'icon': res["weather"][0]["icon"]
         }
 
